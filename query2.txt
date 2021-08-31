@@ -1,10 +1,10 @@
 1 
-SELECT COUNT(`enrolment_date`) AS `numero_iscritti` , `enrolment_date`  
+SELECT COUNT, `enrolment_date`  
 FROM `students`
 GROUP BY `enrolment_date`
 
 2 
-SELECT COUNT(`office_address`) , `office_address`
+SELECT COUNT, `office_address`
 FROM `teachers`
 GROUP BY `office_address`
 
@@ -12,10 +12,10 @@ GROUP BY `office_address`
 SELECT AVG(`vote`) , `exam_id`
 FROM `exam_student` 
 GROUP BY `exam_id`  
-ORDER BY `exam_student`.`exam_id` ASC
+
 
 4 
-SELECT COUNT(`name`) AS `numero_corsi` , `department_id`
+SELECT COUNT , `department_id`
 FROM `degrees`
 GROUP BY `department_id`
 
